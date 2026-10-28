@@ -37,7 +37,8 @@
         </dl>
 
         <div class="case-links" v-if="p.links?.length">
-          <a v-for="l in p.links" :key="l.label" :href="l.href" class="btn btn-ghost small">{{ l.label }}</a>
+          
+    <a v-for="l in p.links" :key="l.label" :href="l.href" target="_blank" rel="noopener" class="btn btn-ghost small">{{ l.label }}</a>
         </div>
       </article>
     </div>
@@ -56,7 +57,9 @@ const projects = [
     role: 'Full-stack builder — designing the Vue.js frontend and building the backend/database layer that aggregates balances across connected banks.',
     tools: ['Vue.js', 'Node.js', 'REST APIs', 'Database'],
     outcome: 'A view-only aggregator (deliberately no payments or transfers) that shows a single combined balance across banks — reducing "which app do I check" friction to one screen.',
-   links: ['https://finview1.netlify.app/'],
+   links: [
+    {label: 'live demo', href: 'https://finview1.netlify.app/'}
+  ],
   },
   {
     name: 'ECMS — Electronic Court & Management System',
@@ -67,7 +70,9 @@ const projects = [
     role: 'Frontend & systems engineer — built the CSS design system, consolidated JavaScript (modals, routing, carousel), and implemented a dozen-plus individual declaration form pages on a consistent layout pattern.',
     tools: ['HTML/CSS', 'JavaScript', 'Node.js (docx generation)', 'Design system / carousel UI'],
     outcome: 'A working template browser covering 12+ affidavit types with a consistent, reusable form pattern — plus generated documentation (a beginner guide and a full technical spec) so the system is handoff-ready.',
-    links: [],
+    links: [
+      {label: 'live demo', href: 'https://myecms.netlify.app/'}
+    ],
   },
 ]
 </script>
