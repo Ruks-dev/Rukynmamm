@@ -54,7 +54,7 @@ const projects = [
     statusClass: 'wip',
     summary: 'An open-banking dashboard that gives people one view of money spread across multiple banks.',
     problem: 'People with accounts at several banks have no single place to see their total balance — they have to check each banking app separately to know where they stand.',
-    role: 'Full-stack builder — designing the Vue.js frontend and building the backend/database layer that aggregates balances across connected banks.',
+    role: 'Frontend Developer — creating the Vue.js user interface while developing the backend and database layers to consolidate balances from various connected banks.',
     tools: ['Vue.js', 'Node.js', 'REST APIs', 'Database'],
     outcome: 'A view-only aggregator (deliberately no payments or transfers) that shows a single combined balance across banks — reducing "which app do I check" friction to one screen.',
    links: [
